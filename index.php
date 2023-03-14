@@ -1,9 +1,7 @@
 <?php
 
-require('functions.php');
+require 'functions.php';
+require 'router.php';
+         
+// dd($_SERVER);
 
-$heading = "Home";
-
-
-
-require "views/index.view.php";
