@@ -3,14 +3,15 @@
 require 'functions.php';
 require 'Database.php';
 // require 'router.php';
+$config = require('config.php');
          
 // dd($_SERVER);
 
 
 
-$db = new Database();
+$db = new Database($config['database']);
 
-$post = $db->query("select * from posts")->fetchAll(PDO::FETCH_ASSOC);
+$post = $db->query("select * from posts")->fetchAll();
 
 dd($post);
 
