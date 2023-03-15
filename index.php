@@ -6,12 +6,13 @@ require 'Database.php';
 $config = require('config.php');
          
 // dd($_SERVER);
-
-
-
 $db = new Database($config['database']);
 
-$post = $db->query("select * from posts")->fetchAll();
+$id = $_GET['id'];
+$query = "select * from posts where id = ?";
+
+
+$post = $db->query($query, [$id])->fetchAll();
 
 dd($post);
 

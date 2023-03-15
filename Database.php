@@ -16,13 +16,11 @@ class Database {
         ]); //user, pass, options
     }
 
-    public function query($query)
+    public function query($query, $params = [])
     {
-        
-
         $statement = $this->connection->prepare($query);
 
-        $statement->execute();
+        $statement->execute($params);
 
         return $statement;
     }
