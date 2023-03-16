@@ -10,6 +10,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="/www/demophp" class="<?= urlIs('/www/demophp/') ? 'bg-gray-900 text-white' : 'text-gray-300';?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
               <a href="about" class="<?= urlIs('/www/demophp/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+              <a href="notes" class="<?= urlIs('/www/demophp/notes.php') ? 'bg-gray-900 text-white' : 'text-gray-300';?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Notes</a>
                 <a href="contact" class="<?= $_SERVER['REQUEST_URI'] === '/www/demophp/contact.php' ? 'bg-gray-900 text-white' : 'text-gray-300';?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
                 <a href="mission" class="<?= $_SERVER['REQUEST_URI'] === '/www/demophp/mission.php' ? 'bg-gray-900 text-white' : 'text-gray-300';?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Our Mission</a>
             </div>
