@@ -8,7 +8,7 @@
       <a href="notes" class="text-blue-500 hover:underline">go back...</a>
     </p>  
     <h2>
-      <?= $note['body'] ?>
+      <?= htmlspecialchars($note['body']) ?>
     </h2>
       
     </div>
